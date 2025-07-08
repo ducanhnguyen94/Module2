@@ -27,13 +27,26 @@ public class Main {
 //            System.out.println("");
 //        }
 
-        Scanner inputNumber = new Scanner(System.in);
-        System.out.println("Nhap mot so nguyen bat ky");
-        int numbers = inputNumber.nextInt();
-        int count = 0;
-        int N = 2;
+//        Scanner inputNumber = new Scanner(System.in);
+//        System.out.println("Nhap mot so nguyen bat ky");
+//        int numbers = inputNumber.nextInt();
+//        int count = 0;
+//        int N = 2;
+//
+//        while (count < numbers) {
+//            int uoc = 0;
+//            for (int i = 1; i <= N; i++) {
+//                if (N % i == 0) uoc++;
+//            }
+//            if (uoc == 2) {
+//                System.out.println(N);
+//                N++;
+//                count++;
+//            } else N++;
+//        }
 
-        while (count < numbers) {
+        int N = 2;
+        while (N <= 100) {
             int uoc = 0;
             for (int i = 1; i <= N; i++) {
                 if (N % i == 0) uoc++;
@@ -41,7 +54,6 @@ public class Main {
             if (uoc == 2) {
                 System.out.println(N);
                 N++;
-                count++;
             } else N++;
         }
     }
